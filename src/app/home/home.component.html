@@ -1,0 +1,19 @@
+<h1>Componente de clicks</h1>
+
+<div class="play-container">
+    <p>Foram clicados: <span  (click)="countClick()">click me </span>{{clickCounter}} vezes</p>
+</div>
+
+<div class="play-container">
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <strong>texto digitado em upperCase:</strong> {{ name.toUpperCase() }}
+</div>
+<div class="play-container">
+    <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="secundario">
+        <p>o contador e <strong>maior que 4</strong></p>
+    </ng-template>
+    <ng-template #secundario>
+        <p>o contador e <strong>menor que 4</strong></p>
+    </ng-template>
+</div>
