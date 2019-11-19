@@ -1,1 +1,9 @@
-<p>list works!</p>
+<div class="container">
+    <ul *ngIf="imagens">
+        <li *ngFor="let image of imagens">
+            <p>ID: {{image.id}}</p>
+            <img src="{{image.thumbnailUrl}}" alt="">
+            <p>Titulo: {{image.title}}</p>
+        </li>
+    </ul>
+</div>

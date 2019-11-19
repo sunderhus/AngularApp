@@ -9,7 +9,7 @@
     <br>
     <strong>texto digitado em upperCase:</strong> {{ name.toUpperCase() }}
 </div>
-<div class="play-container">
+<div class="play-container" [ngClass]="setClasses()">
     <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="secundario">
         <p>o contador e <strong>maior que 4</strong></p>
     </ng-template>
