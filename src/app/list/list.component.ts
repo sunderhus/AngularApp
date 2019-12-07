@@ -6,14 +6,14 @@ import { HttpService } from '../http.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  imagens: object;
+  itens: object;
 
   constructor(private _http: HttpService) { }
 
   ngOnInit() {
-    this._http.getImages().subscribe(data => {
-      this.imagens = data;
-      console.log(this.imagens);
+    this._http.buscarItens().subscribe(data => {
+      this.itens = data;
+      console.log(this.itens);
     });
   }
 

@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class HttpService {
   constructor(private http: HttpClient) { }
-  getImages(){
+  buscarItens() {
     return this.http.get('https://jsonplaceholder.typicode.com/photos?_start=0&_limit=10');
   }
 }

@@ -1,9 +1,9 @@
 <div class="container">
-    <ul *ngIf="imagens">
-        <li *ngFor="let image of imagens">
-            <p>ID: {{image.id}}</p>
-            <img src="{{image.thumbnailUrl}}" alt="">
-            <p>Titulo: {{image.title}}</p>
+    <ul *ngIf="itens">
+        <li *ngFor="let item of itens">
+            <p>ID: {{item.id}}</p>
+            <img src="{{item.thumbnailUrl}}" alt="">
+            <p>Titulo: {{item.title}}</p>
         </li>
     </ul>
 </div>
